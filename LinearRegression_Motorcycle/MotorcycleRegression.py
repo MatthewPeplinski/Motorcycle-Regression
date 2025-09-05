@@ -13,9 +13,9 @@ import RegressionLib as rl
 data = pd.read_csv("all_bikez_curated.csv", low_memory=False)
 #print(data.info())
 
-##I see that there are 10 numeric data catagories in this dataset and >38000 entries
+## I see that there are 10 numeric data catagories in this dataset and >38000 entries
 """
-Next will be selecting which catagories I will look at
+Select features which make sense, and are usable
 (#+ denotes a feature that makes sense to use, #-denotes a non-useful feature)
 
 ## Power (HP): Variable to be modeled, the measure of work which can be produced by the engine
@@ -35,7 +35,7 @@ Next will be selecting which catagories I will look at
 data_selected = data[["Power (hp)", "Displacement (ccm)", "Torque (Nm)", "Dry weight (kg)"]]
 data2 = data_selected.dropna()
 
-#renaming into more usable names
+# Renaming into more usable names
 data2 = data2.rename(columns = {"Power (hp)":"Power"})
 data2 = data2.rename(columns = {"Displacement (ccm)": "Displacement"})
 data2 = data2.rename(columns = {"Torque (Nm)":"Torque"})
@@ -45,7 +45,7 @@ data2 = data2.rename(columns = {"Dry weight (kg)": "DryWeight"})
 data2.info()
 
 """
-we went from 38298 entries down to 10265 entries. Next is to remove small displacement vehicles 
+Went from 38298 entries down to 10265 entries by dropping missing values. Next is to remove small displacement vehicles 
 to narrow the displacement category since I want information on the effects of the variables on
 motorcycles and not on scooters. The legal cutoff for scooters is 130 cc in WI so that is where
 I will draw the lower bound
