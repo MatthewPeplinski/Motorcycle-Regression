@@ -6,7 +6,7 @@ This is a practice using multi-linear regression on a motorcycle data set accumu
 - RegressionLib.py - personally coded linear regression file to compare to sklearn regression
 - all_bikez_curated.csv - data file for program, contains motorcycle info
 
-##Inital look
+## Inital look
 Began by checking the distribuition of displacements in the selected dataset.
 
 ![Motorcycle CC distribution](https://github.com/MatthewPeplinski/Motorcycle-Regression/blob/main/total_distribution.png)
