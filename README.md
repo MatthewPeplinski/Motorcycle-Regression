@@ -5,10 +5,14 @@ This is a practice using multi-linear regression on a motorcycle data set accumu
 - MotorcycleRegression.py - Main driving file used for regression task
 - RegressionLib.py - personally coded linear regression file to compare to sklearn regression
 - all_bikez_curated.csv - data file for program, contains motorcycle info
-  
+
+##Inital look
+Began by checking the distribuition of displacements in the selected dataset.
 
 ![Motorcycle CC distribution](https://github.com/MatthewPeplinski/Motorcycle-Regression/blob/main/total_distribution.png)
 
+## Data processing
+I decided to restrict the data to above 130 cc's which is in line with Wisconsins motor vehicle laws to determine what is legally considered a motorcycle and then again to above 250 cc's based on my own knowledge of relevant displacements to the problem I wanted to solve.
 ![Motorcycle cc distribution over 250 cc's](https://github.com/MatthewPeplinski/Motorcycle-Regression/blob/main/over_250_cc_dist.png)
 
 ## Final results
