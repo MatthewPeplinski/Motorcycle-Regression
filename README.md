@@ -18,14 +18,14 @@ I decided to restrict the data to above 130 cc's which is in line with Wisconsin
 ## Final results
 Also made an effort to make my own linear regression in order to compare to SKLearn's regression library. The results are printed to terminal as shown below:
 
-Sklearn Linear
+Sklearn Linear:
 - R^2: 0.7304619192698891
 - RMSE: 23.956414185100616
 
-Personal Linear
+Personal Linear:
 - R^2: 0.7304619192698891
 - RMSE: 23.956414185100616
 
-Sklearn Linear with higher base CC
+Sklearn Linear with higher base CC:
 - R^2: 0.8086845346245763
 - RMSE: 25.60126208815181
